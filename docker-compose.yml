@@ -19,7 +19,7 @@ services:
       - 8080:8080
 
   web:
-    build: .
+    image: zeth5/fastapi-todo:latest
     ports:
       - "8000:8000"
     depends_on: 
