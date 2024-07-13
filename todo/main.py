@@ -4,7 +4,6 @@ from sqlalchemy.orm import Session
 from .sql import crud, models, schemas
 from .sql.database import SessionLocal, engine
 
-# test
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
