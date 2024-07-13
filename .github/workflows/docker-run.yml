@@ -2,7 +2,7 @@ name: cd
 
 on:
     workflow_run:
-        workflows: ['ci']
+        workflows: ['py-lint','ci']
         types: [completed]
         branches:
             - 'main'
